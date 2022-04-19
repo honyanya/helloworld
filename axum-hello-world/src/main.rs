@@ -5,7 +5,8 @@ use std::net::SocketAddr;
 async fn main() {
     // build our application with a route
     let app = Router::new()
-      .route("/", get(handler));
+      .route("/", get(handler))
+      .route("/status", get(status));
 
     // run it
     let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
@@ -18,4 +19,8 @@ async fn main() {
 
 async fn handler() -> Html<&'static str> {
     Html("Hello World")
+}
+
+async fn status() -> &'static str {
+    "ok"
 }
