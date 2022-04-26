@@ -12,6 +12,6 @@ run
 $ sbt
 > run
 [info] running hello 
-Hello world!
-I was compiled by Scala 3. :)
+What's your name?: honyanya
+Your name is honyanya Hello world!
 ```
