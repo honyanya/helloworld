@@ -1,8 +1,9 @@
-import scala.io.StdIn.readLine
+import scala.io.StdIn.{readInt, readLine}
 
 @main def hello: Unit = 
   sayHello
   inputHello
+  showEvenOdd
 
 def sayHello: Unit =
   println("Hello world!")
@@ -15,3 +16,13 @@ def inputHello: Unit =
   val name = readLine()
 
   println(s"Your name is $name Hello world!")
+
+def showEvenOdd: Unit =
+  print("input number: ")
+  val number = readInt()
+
+  if number % 2 == 0 then {
+    println("even")
+  } else {
+    println("odd")
+  }
