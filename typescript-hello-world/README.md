@@ -10,3 +10,9 @@ add `tsconfig.json`
 ```sh
 $ yarn tsc --init
 ```
+
+unittest
+
+```sh
+$ yarn test
+```
