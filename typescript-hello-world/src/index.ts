@@ -1,6 +1,6 @@
-const helloworld = (message: string): void => {
-    console.info(`hello world! ${message}`);
+export const helloworld = (message: string): string => {
+    return `hello world! ${message}`;
 };
 
-helloworld("hoge");
-helloworld("fuga");
+console.info(helloworld("hoge"));
+console.info(helloworld("fuga"));
