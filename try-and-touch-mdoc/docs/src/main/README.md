@@ -22,3 +22,14 @@ val person = Person("hoge", 20)
 person.name
 person.age
 ```
+
+zio
+
+```scala mdoc
+import zio._
+
+def run[A](io: RIO[ZEnv, A]): A = Runtime.default.unsafeRunTask(io)
+
+val io = ZIO.succeed(1)
+run(io)
+```
