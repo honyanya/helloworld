@@ -5,7 +5,7 @@ ThisBuild / organizationName := "example"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "try-and-touch-mdoc"
+    name := "try-and-touch-mdoc",
   )
 
 lazy val docs = (project in file("docs"))
@@ -13,3 +13,6 @@ lazy val docs = (project in file("docs"))
   .enablePlugins(MdocPlugin)
   .settings(mdocIn := file("docs/src/main"))
   .settings(mdocOut := file("docs/mdoc"))
+  .settings(
+    libraryDependencies += "dev.zio" %% "zio" % "1.0.12"
+  )
