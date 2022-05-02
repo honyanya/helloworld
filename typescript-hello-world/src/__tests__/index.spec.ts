@@ -8,6 +8,6 @@ describe("hellowrold", () => {
 
   test("message is fuga.", () => {
     expect(helloworld("fuga")).toEqual("hello world! fuga");
-});
+  });
 
 });
