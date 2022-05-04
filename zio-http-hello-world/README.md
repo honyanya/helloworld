@@ -6,13 +6,6 @@ create project
 $ sbt new dream11/zio-http.g8
 ```
 
-change `build.sbt`
-
-```diff
--    Compile / run / mainClass := Option("com.example.zhttpservice.ZhttpService"),
-+    Compile / run / mainClass := Option("com.example.ziohttphelloworld.Ziohttphelloworld"),
-```
-
 run
 
 ```sh
