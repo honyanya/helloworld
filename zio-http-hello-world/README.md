@@ -20,4 +20,7 @@ Hello World!
 
 $ curl -XGET http://localhost:8090/json
 {"greetings": "Hello World!"}
+
+$ curl -XPOST http://localhost:8090/text
+post request
 ```
