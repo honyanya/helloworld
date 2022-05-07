@@ -11,6 +11,10 @@ object ZiohttphelloworldSpec extends DefaultRunnableSpec {
         val request = Request(Method.GET, URL(!! / uri))
         assertM(Ziohttphelloworld.app(request).map(_.status))(equalTo(Status.OK))
       }
+      checkAllM(Gen.fromIterable(List("parameter"))) { uri =>
+        val request = Request(Method.POST, URL(!! / uri))
+        assertM(Ziohttphelloworld.app(request).map(_.status))(equalTo(Status.OK))
+      }
     },
   )
 }
