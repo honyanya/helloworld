@@ -1,42 +1,21 @@
-# Nuxt 3 Minimal Starter
+# nuxt3-hello-world
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+https://v3.nuxtjs.org/getting-started/quick-start
 
-## Setup
+make project
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+```sh
+$ npx nuxi init nuxt-app
 ```
 
-## Development Server
+package install
 
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
+```sh
+$ yarn install
 ```
 
-## Production
+run
 
-Build the application for production:
-
-```bash
-npm run build
+```sh
+$ yarn dev
 ```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
