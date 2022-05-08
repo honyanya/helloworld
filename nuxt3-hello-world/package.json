@@ -1,4 +1,5 @@
 {
+  "name": "nuxt3-hello-world",
   "private": true,
   "scripts": {
     "build": "nuxt build",
