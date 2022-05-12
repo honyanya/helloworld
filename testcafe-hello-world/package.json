@@ -1,0 +1,7 @@
+{
+  "name": "testcafe-hello-world",
+  "version": "1.0.0",
+  "devDependencies": {
+    "testcafe": "^1.18.6"
+  }
+}
