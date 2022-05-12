@@ -7,5 +7,6 @@ test('My first test', async t => {
     await t
         .typeText('#developer-name', 'honyanya')
         .click('#submit-button')
-        .expect(Selector('#article-header').innerText).eql('Thank you, honyanya!');
+        .expect(Selector('#article-header').innerText).eql('Thank you, honyanya!')
+        .wait(2000);
 });
