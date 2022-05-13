@@ -3,5 +3,11 @@
   "version": "1.0.0",
   "devDependencies": {
     "testcafe": "^1.18.6"
+  },
+  "scripts": {
+    "test:chromium": "testcafe chromium src/",
+    "test:chromium:headless": "testcafe chromium:headless src/test.js",
+    "test:firefox": "testcafe firefox src/",
+    "test:firefox:headless": "testcafe firefox:headless src/"
   }
 }
