@@ -18,9 +18,9 @@ $ yarn testcafe -v
 test run
 
 ```sh
-## firefox
+## firefox example
 $ yarn testcafe firefox src/test.js
 
-## chromium
+## chromium example
 $ yarn testcafe chromium src/test.js
 ```
