@@ -10,6 +10,7 @@
 
 export default {
   async fetch(request: Request): Promise<Response> {
-    return new Response("Hello World!");
+    const json = `{"message": "Hello World!"}`
+    return new Response(json);
   },
 };
