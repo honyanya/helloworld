@@ -29,4 +29,8 @@ $ curl -XGET http://localhost:8787
 Hello World!
 ```
 
+worker deploy
 
+```sh
+$ wrangler publish
+```
