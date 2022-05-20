@@ -25,8 +25,10 @@ $ yarn wrangler dev
 ...
 
 ## other terminal
-$ curl -XGET http://localhost:8787
-Hello World!
+$ curl -XGET http://localhost:8787 -s | jq
+{
+  "message": "Hello World!"
+}
 ```
 
 worker deploy
