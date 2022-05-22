@@ -1,0 +1,8 @@
+name = "r2-hello-world"
+main = "src/index.ts"
+compatibility_date = "2022-05-14"
+
+[[r2_buckets]]
+binding = "MY_BUCKET"
+bucket_name = "r2-hello-world-bucket"
+preview_bucket_name="r2-hello-world-preview-bucket"
