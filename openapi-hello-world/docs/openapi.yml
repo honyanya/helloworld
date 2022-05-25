@@ -22,3 +22,27 @@ paths:
                     type: string
               example:
                 example: "Hello World!"
+  "/basicauth":
+    get:
+      security:
+        - basicAuth: []
+      responses:
+        "200":
+          description: "basic auth"
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - example
+                properties:
+                  example:
+                    type: string
+              example:
+                example: "ok"
+
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
