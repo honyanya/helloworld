@@ -11,7 +11,7 @@ $ zx --version
 run
 
 ```sh
-$ chmod +x script.mjs
-$ zx script.mjs
+$ chmod +x helloworld.mjs
+$ zx helloworld.mjs
 Hello World!
 ```
