@@ -5,7 +5,16 @@ install
 ```sh
 $ yarn global add zx
 $ zx --version
-6.2.4
+7.0.0
+```
+
+repl
+
+```sh
+$ zx 
+❯ console.log("Hello World!");
+Hello World!
+undefined
 ```
 
 run
