@@ -5,9 +5,12 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "outDir": "./dist",
+    "resolveJsonModule": true,
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "config/**/*.json"
   ],
   "exclude": [
     "**/*.spec.ts",
