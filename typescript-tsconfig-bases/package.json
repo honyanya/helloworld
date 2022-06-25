@@ -1,0 +1,7 @@
+{
+    "name": "typescript-tsconfig-bases",
+    "version": "1.0.0",
+    "devDependencies": {
+        "@tsconfig/strictest": "^1.0.1"
+    }
+}
