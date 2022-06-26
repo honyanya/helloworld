@@ -1,8 +1,7 @@
 # deno-cliffy-hello-world
 
 ```sh
-$ deno run command.ts helloworld
-Check file:///home/vagrant/workspace/src/github.com/honyanya/helloworld/deno-cliffy-hello-world/command.ts
+$ deno run command.ts helloworld --name honyanya 
 { args: [ "helloworld" ] }
-{ options: {} }
+{ options: { name: "honyanya" } }
 ```
