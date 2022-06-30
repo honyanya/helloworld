@@ -1,0 +1,4 @@
+---
+scripts:
+  lint: deno lint
+  format: deno fmt
