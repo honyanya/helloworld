@@ -1,5 +1,23 @@
-@main def hello: Unit = 
-  println("Hello world!")
-  println(msg)
+import zio._
+import zio.Console._
 
-def msg = "I was compiled by Scala 3. :)"
+object MyApp extends ZIOAppDefault {
+
+  def request(counter: Ref[Int]) = {
+    for {
+      rn <- counter.modify(c => (c + 1, c + 1))
+      _  <- Console.printLine(s"request number received: $rn")
+    } yield ()
+  }
+
+  private val initial = 0
+  private val myApp =
+    for {
+      ref <- Ref.make(initial)
+      _ <- request(ref) zipPar request(ref)
+      rn <- ref.get
+      _ <- Console.printLine(s"total requests performed: $rn")
+    } yield ()
+
+  def run = myApp
+}
