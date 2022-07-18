@@ -1,0 +1,11 @@
+{
+  "name": "try-and-touch-markdownlint",
+  "version": "0.1.0",
+  "devDependencies": {
+    "markdownlint": "^0.26.0",
+    "markdownlint-cli": "^0.32.0"
+  },
+  "scripts": {
+    "lint": "markdownlint ./docs/*.md"
+  }
+}
