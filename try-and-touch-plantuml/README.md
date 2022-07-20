@@ -1,3 +1,3 @@
-# try-and-touch-mermaid
+# try-and-touch-plantuml
 
-https://mermaid-js.github.io/mermaid/#/
+https://plantuml.com/ja/
