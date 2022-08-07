@@ -1,5 +1,9 @@
 # hono-hello-world
 
+https://github.com/honojs/hono
+
+https://honojs.dev/
+
 ```
 $ yarn start
 
