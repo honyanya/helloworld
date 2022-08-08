@@ -1,5 +1,8 @@
-export const helloworld = (message: string): string => {
-    return `hello world! ${message}`;
-};
+function identity<Type>(arg: Type): Type {
+    return arg;
+}
 
-console.info(helloworld("hoge"));
+// const output = identity<string>("Hello World!");
+const output = identity("Hello World!");
+
+console.info(output);
