@@ -1,13 +1,14 @@
+interface GenericIdentityFn {
+    <Type>(arg: Type): Type;
+}
+   
 function identity<Type>(arg: Type): Type {
     return arg;
 }
 
-// let myIdentity: <Type>(arg: Type) => Type = identity;
-// let myIdentity: <Input>(arg: Input) => Input = identity;
-let myIdentity: { <Type>(arg: Type): Type } = identity;
+let myIdentity: GenericIdentityFn = identity;
 
-// const output = identity<string>("Hello World!");
-const output = identity(["Hello World!"]);
+const output = myIdentity("Hello World!");
 
 console.info(output);
   
