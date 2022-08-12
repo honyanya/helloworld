@@ -1,9 +1,13 @@
-function identity<Type>(arg: Array<Type>): Array<Type> {
-    console.log(arg.length);
+interface GenericIdentityFn<Type> {
+    (arg: Type): Type;
+}
+   
+function identity<Type>(arg: Type): Type {
     return arg;
 }
 
-// const output = identity<string>("Hello World!");
-const output = identity(["Hello World!"]);
+let myIdentity: GenericIdentityFn<number> = identity;
+
+const output = myIdentity(0);
 
 console.info(output);
