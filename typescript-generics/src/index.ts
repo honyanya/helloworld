@@ -17,10 +17,10 @@ class GenericNumber<NumType> {
     add: ((x: NumType, y: NumType) => NumType) | undefined;
 }
    
-let myGenericNumber = new GenericNumber<number>();
-myGenericNumber.zeroValue = 0;
-const add = myGenericNumber.add = function (x, y) {
-    return x + y;
+let stringNumeric = new GenericNumber<string>();
+stringNumeric.zeroValue = "";
+stringNumeric.add = function (x, y) {
+  return x + y;
 };
-
-console.info(add(10,20));
+ 
+console.log(stringNumeric.add(stringNumeric.zeroValue, "test"));
