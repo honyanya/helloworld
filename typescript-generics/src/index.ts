@@ -13,8 +13,8 @@ const output = myIdentity(0);
 console.info(output);
 
 class GenericNumber<NumType> {
-    zeroValue: NumType;
-    add: (x: NumType, y: NumType) => NumType;
+    zeroValue: NumType | undefined;
+    add: ((x: NumType, y: NumType) => NumType) | undefined;
 }
    
 let myGenericNumber = new GenericNumber<number>();
