@@ -25,7 +25,11 @@ stringNumeric.add = function (x, y) {
  
 console.log(stringNumeric.add(stringNumeric.zeroValue, "test"));
 
-function loggingIdentity<Type>(arg: Type): Type {
-    console.log(arg.length); // Property 'length' does not exist on type 'Type'.
+interface Lengthwise {
+    length: number;
+}
+
+function loggingIdentity<Type extends Lengthwise>(arg: Type): Type {
+    console.log(arg.length); // Now we know it has a .length property, so no more error
     return arg;
 }
