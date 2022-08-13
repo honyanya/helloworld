@@ -24,3 +24,8 @@ stringNumeric.add = function (x, y) {
 };
  
 console.log(stringNumeric.add(stringNumeric.zeroValue, "test"));
+
+function loggingIdentity<Type>(arg: Type): Type {
+    console.log(arg.length); // Property 'length' does not exist on type 'Type'.
+    return arg;
+}
