@@ -47,3 +47,34 @@ let x = { a: 1, b: 2, c: 3, d: 4 };
 getProperty(x, "a");
 getProperty(x, "b");
 // getProperty(x, "m"); // Argument of type '"m"' is not assignable to parameter of type '"a" | "b" | "c" | "d"'.
+
+function create<Type>(c: { new (): Type }): Type {
+    return new c();
+}
+
+class BeeKeeper {
+    hasMask: boolean = true;
+}
+
+class ZooKeeper {
+    nametag: string = "Mikle";
+}
+   
+class Animal {
+    numLegs: number = 4;
+}
+   
+class Bee extends Animal {
+    keeper: BeeKeeper = new BeeKeeper();
+}
+   
+class Lion extends Animal {
+    keeper: ZooKeeper = new ZooKeeper();
+}
+   
+function createInstance<A extends Animal>(c: new () => A): A {
+    return new c();
+}
+   
+console.info(createInstance(Lion).keeper.nametag);
+console.info(createInstance(Bee).keeper.hasMask);
