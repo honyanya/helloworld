@@ -1,0 +1,7 @@
+{
+  "name": "graphqljs-hello-world",
+  "version": "0.1.0",
+  "dependencies": {
+    "graphql": "^16.5.0"
+  }
+}
