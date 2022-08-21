@@ -1,0 +1,14 @@
+/* @theme style */
+@import 'default';
+
+h1 {
+    color: #f00;
+}
+
+h2 {
+    color: #f0f;
+}
+
+li {
+    color: #666;
+}
