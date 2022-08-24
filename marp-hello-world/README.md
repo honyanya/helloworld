@@ -12,10 +12,7 @@ $ marp -v
 convert markdown to pdf
 
 ```sh
-$ marp --pdf ./src/index.md
-[  INFO ] Converting 1 markdown...
-[  INFO ] default-theme/index.md => default-theme/index.pdf
-
+$ marp --pdf --allow-local-files ./src/index.md
 $ ls ./src/
 index.md  index.pdf
 ```
