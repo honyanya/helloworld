@@ -35,3 +35,15 @@ public class Main {
     }
 }
 ```
+
+---
+
+# Sample Image
+
+![sample image](./images/sample_image.png)
+
+---
+
+# Sample Image
+
+![width:512](./images/sample_image.png)
