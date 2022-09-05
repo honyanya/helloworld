@@ -1,0 +1,16 @@
+---
+name: Check Schedule Cron
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 15-18 * * *' ## JST 00-03
+
+jobs:
+  build:
+    name: echo
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "check schedule cron"
+      - run: date "+%Y/%m/%d %H:%M:%S"
+      - run: TZ=JST-9 date "+%Y/%m/%d %H:%M:%S"
