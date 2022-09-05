@@ -4,7 +4,7 @@ name: Check Schedule Cron
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 15-18 * * *' ## JST 00-03
+    - cron: '*/15 * * * *'
 
 jobs:
   build:
