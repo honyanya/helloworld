@@ -1,0 +1,12 @@
+{
+  "name": "worked-hello-world",
+  "version": "0.1.0",
+  "main": "index.js",
+  "devDependencies": {
+    "esbuild": "^0.15.9",
+    "workerd": "^1.20220926.3"
+  },
+  "dependencies": {
+    "hono": "^2.2.2"
+  }
+}
