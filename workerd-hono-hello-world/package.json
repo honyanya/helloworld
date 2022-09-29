@@ -1,5 +1,5 @@
 {
-  "name": "worked-hello-world",
+  "name": "workerd-hono-hello-world",
   "version": "0.1.0",
   "main": "index.js",
   "devDependencies": {
