@@ -1,0 +1,8 @@
+{
+  "name": "workerd-hello-world",
+  "version": "0.1.0",
+  "main": "hello.js",
+  "devDependencies": {
+    "workerd": "^1.20220926.3"
+  }
+}
