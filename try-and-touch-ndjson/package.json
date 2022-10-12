@@ -1,0 +1,7 @@
+{
+    "name": "try-and-touch-ndjson",
+    "version": "0.1.0",
+    "devDependencies": {
+        "ndjson": "^2.0.0"
+    }
+}
