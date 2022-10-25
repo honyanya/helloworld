@@ -1,0 +1,20 @@
+diff --git a/git-diff-git-apply/src/script.pl b/git-diff-git-apply/src/script.pl
+index 4fc6f33..559d455 100644
+--- a/git-diff-git-apply/src/script.pl
++++ b/git-diff-git-apply/src/script.pl
+@@ -4,6 +4,15 @@ use warnings;
+ 
+ sub main {
+ 	print "Hello World!";
++    print 1;
++    print 2;
++    print 3;
++    print 4;
++    print 5;
++    print 6;
++    print 7;
++    print 8;
++    print 9;
+ }
+ 
+ main();
