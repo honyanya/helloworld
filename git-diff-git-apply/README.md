@@ -1,6 +1,6 @@
 # git-diff-git-apply
 
-get diff
+get diff.
 
 ```sh
 git diff > diff.patch
@@ -16,5 +16,5 @@ patch -s -u < ../diff.patch
 use git apply.
 
 ```sh
-git apply diff.patch 
+git apply diff.patch
 ```
