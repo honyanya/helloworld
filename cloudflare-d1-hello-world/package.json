@@ -1,0 +1,8 @@
+{
+  "name": "cloudflare-d1-hello-world",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "wrangler": "^2.2.1"
+  }
+}
