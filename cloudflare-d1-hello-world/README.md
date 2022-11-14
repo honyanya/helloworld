@@ -47,3 +47,15 @@ yarn wrangler d1 list
 └──────────────────────────────────────┴───────────────────┘
 ...
 ```
+
+```
+## yarn wrangler d1 execute <database-name> --command "<SQL-query>"
+yarn wrangler d1 execute hello-d1-database --command "SELECT 'Hello D1!' AS hello_world"
+...
+┌─────────────┐
+│ hello_world │
+├─────────────┤
+│ Hello D1!   │
+└─────────────┘
+...
+```
