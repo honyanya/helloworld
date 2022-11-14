@@ -21,11 +21,12 @@ login
 $ yarn wrangler login
 ```
 
+
 ## Check with Wrangler command
 
 https://developers.cloudflare.com/d1/wrangler-commands/
 
-```
+```sh
 ## wrangler d1 create <database-name>
 yarn wrangler d1 create hello-d1-database
 ...
@@ -36,8 +37,7 @@ database_id = "********-****-****-****-************"
 ✨  Done in 3.57s.
 ```
 
-
-```
+```sh
 yarn wrangler d1 list
 ...
 ┌──────────────────────────────────────┬───────────────────┐
@@ -48,7 +48,7 @@ yarn wrangler d1 list
 ...
 ```
 
-```
+```sh
 ## yarn wrangler d1 execute <database-name> --command "<SQL-query>"
 yarn wrangler d1 execute hello-d1-database --command "SELECT 'Hello D1!' AS hello_world"
 ...
