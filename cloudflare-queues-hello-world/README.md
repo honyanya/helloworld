@@ -32,3 +32,11 @@ Creating queue hello-queue.
 Created queue hello-queue.
 ✨  Done in 1.59s.
 ```
+
+```sh
+## wrangler queues list
+yarn wrangler queues list
+...
+[{"queue_id":"*****","queue_name":"hello-queue","created_on":"2022-11-15T14:49:15.236647Z","modified_on":"2022-11-15T14:49:15.236647Z","producers_total_count":0,"producers":[],"consumers_total_count":0,"consumers":[]}]
+...
+```
