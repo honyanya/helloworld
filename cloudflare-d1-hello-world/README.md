@@ -60,6 +60,30 @@ yarn wrangler d1 execute hello-d1-database --command "SELECT 'Hello D1!' AS hell
 ...
 ```
 
+local execute
+
+```
+yarn wrangler d1 execute hello-d1-database --local --file=./schema.sql
+
+yarn wrangler d1 execute hello-d1-database --local --command "SELECT id, company_name, contact_name FROM customers"
+...
+┌────┬─────────────────────┬───────────────────┐
+│ id │ company_name        │ contact_name      │
+├────┼─────────────────────┼───────────────────┤
+│ 1  │ Alfreds Futterkiste │ Maria Anders      │
+├────┼─────────────────────┼───────────────────┤
+│ 4  │ Around the Horn     │ Thomas Hardy      │
+├────┼─────────────────────┼───────────────────┤
+│ 11 │ Bs Beverages        │ Victoria Ashworth │
+├────┼─────────────────────┼───────────────────┤
+│ 13 │ Bs Beverages        │ Random Name       │
+└────┴─────────────────────┴───────────────────┘
+...
+
+```
+
+d1 execute
+
 ```sh
 yarn wrangler d1 execute hello-d1-database --file=./schema.sql
 
