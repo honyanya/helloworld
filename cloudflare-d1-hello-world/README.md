@@ -126,3 +126,37 @@ curl http://127.0.0.1:8787/api/beverages -s | jq
   }
 ]
 ```
+
+deploy
+
+```sh
+yarn wrangler publish
+...
+Your worker has access to the following bindings:
+- D1 Databases:
+  - dev: hello-d1-database (********-****-****-****-************)
+Total Upload: 5.11 KiB / gzip: 1.74 KiB
+Uploaded cloudflare-d1-hello-world (1.23 sec)
+Published cloudflare-d1-hello-world (3.92 sec)
+  https://cloudflare-d1-hello-world.{*****}.workers.dev
+Current Deployment ID: ********-****-****-****-************
+...
+
+## other terminal
+curl https://cloudflare-d1-hello-world.{*****}.workers.dev
+Call /api/beverages to see everyone who works at Bs Beverages
+
+curl https://cloudflare-d1-hello-world.{*****}.workers.dev/api/beverages -s | jq
+[
+  {
+    "company_name": "Bs Beverages",
+    "contact_name": "Victoria Ashworth",
+    "id": 11
+  },
+  {
+    "company_name": "Bs Beverages",
+    "contact_name": "Random Name",
+    "id": 13
+  }
+]
+```
