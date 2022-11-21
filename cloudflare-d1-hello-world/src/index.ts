@@ -7,7 +7,7 @@ export default {
         const { pathname } = new URL(request.url);
         if (pathname === "/api/beverages") {
             const { results } = await env.dev.prepare(
-                "SELECT * FROM customers WHERE company_name = ?"
+                "SELECT id, company_name, contact_name FROM customers WHERE company_name = ?"
             )
             .bind("Bs Beverages")
             .all();
