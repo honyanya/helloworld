@@ -111,4 +111,18 @@ yarn start --local --persist
 ## other terminal
 curl http://127.0.0.1:8787
 Call /api/beverages to see everyone who works at Bs Beverage
+
+curl http://127.0.0.1:8787/api/beverages -s | jq
+[
+  {
+    "id": 11,
+    "company_name": "Bs Beverages",
+    "contact_name": "Victoria Ashworth"
+  },
+  {
+    "id": 13,
+    "company_name": "Bs Beverages",
+    "contact_name": "Random Name"
+  }
+]
 ```
