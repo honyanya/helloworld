@@ -102,3 +102,13 @@ yarn wrangler d1 execute hello-d1-database --command "SELECT id, company_name, c
 └─────────────────────┴───────────────────┴────┘
 ...
 ```
+
+wrangler dev
+
+```
+yarn start --local --persist
+
+## other terminal
+curl http://127.0.0.1:8787
+Call /api/beverages to see everyone who works at Bs Beverage
+```
