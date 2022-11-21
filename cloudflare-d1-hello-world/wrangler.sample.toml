@@ -1,0 +1,8 @@
+name = "cloudflare-d1-hello-world"
+main = "src/index.ts"
+compatibility_date = "2022-11-21"
+
+[[ d1_databases ]]
+binding = "dev"
+database_name = "hello-d1-database"
+database_id = "********-****-****-****-************"
