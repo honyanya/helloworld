@@ -24,6 +24,15 @@ export default {
             return Response.json(results);
         }
 
+        if (pathname === "/api/horn") {
+            const { results } = await env.dev.prepare(
+                "SELECT id, company_name, contact_name FROM customers WHERE company_name = ?"
+            )
+            .bind("Around the Horn")
+            .all();
+            return Response.json(results);
+        }
+
         return new Response(
             "Call /api/beverages to see everyone who works at Bs Beverages"
         );
