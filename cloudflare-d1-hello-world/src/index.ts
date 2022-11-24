@@ -7,29 +7,17 @@ export default {
         const { pathname } = new URL(request.url);
 
         if (pathname === "/api/beverages") {
-            const { results } = await env.dev.prepare(
-                "SELECT id, company_name, contact_name FROM customers WHERE company_name = ?"
-            )
-            .bind("Bs Beverages")
-            .all();
+            const { results } = await search("Bs Beverages", env);
             return Response.json(results);
         }
 
         if (pathname === "/api/futterkiste") {
-            const { results } = await env.dev.prepare(
-                "SELECT id, company_name, contact_name FROM customers WHERE company_name = ?"
-            )
-            .bind("Alfreds Futterkiste")
-            .all();
+            const { results } = await search("Alfreds Futterkiste", env);
             return Response.json(results);
         }
 
         if (pathname === "/api/horn") {
-            const { results } = await env.dev.prepare(
-                "SELECT id, company_name, contact_name FROM customers WHERE company_name = ?"
-            )
-            .bind("Around the Horn")
-            .all();
+            const { results } = await search("Around the Horn", env);
             return Response.json(results);
         }
 
@@ -38,3 +26,11 @@ export default {
         );
     },
 };
+
+const search = async (bind: string, env: Env): Promise<any> => {
+    return await env.dev.prepare(
+        "SELECT id, company_name, contact_name FROM customers WHERE company_name = ?"
+    )
+    .bind(bind)
+    .all();
+}
