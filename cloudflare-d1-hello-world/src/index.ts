@@ -27,7 +27,7 @@ export default {
     },
 };
 
-const search = async (bind: string, env: Env): Promise<any> => {
+const search = async (bind: string, env: Env): Promise<D1Result> => {
     return await env.dev.prepare(
         "SELECT id, company_name, contact_name FROM customers WHERE company_name = ?"
     )
