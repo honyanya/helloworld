@@ -125,6 +125,24 @@ curl http://127.0.0.1:8787/api/beverages -s | jq
     "contact_name": "Random Name"
   }
 ]
+
+curl http://127.0.0.1:8787/api/futterkiste -s | jq
+[
+  {
+    "id": 1,
+    "company_name": "Alfreds Futterkiste",
+    "contact_name": "Maria Anders"
+  }
+]
+
+curl http://127.0.0.1:8787/api/horn -s | jq
+[
+  {
+    "id": 4,
+    "company_name": "Around the Horn",
+    "contact_name": "Thomas Hardy"
+  }
+]
 ```
 
 deploy
