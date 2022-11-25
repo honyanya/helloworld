@@ -177,4 +177,22 @@ curl https://cloudflare-d1-hello-world.{*****}.workers.dev/api/beverages -s | jq
     "id": 13
   }
 ]
+
+curl https://cloudflare-d1-hello-world.{*****}.workers.dev/api/futterkiste -s | jq
+[
+  {
+    "id": 1,
+    "company_name": "Alfreds Futterkiste",
+    "contact_name": "Maria Anders"
+  }
+]
+
+curl https://cloudflare-d1-hello-world.{*****}.workers.dev/api/horn -s | jq
+[
+  {
+    "id": 4,
+    "company_name": "Around the Horn",
+    "contact_name": "Thomas Hardy"
+  }
+]
 ```
