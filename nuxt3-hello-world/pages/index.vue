@@ -1,4 +1,7 @@
 <script setup>
+const appConfig = useAppConfig()
+console.info(appConfig.foo)
+
 const version = 2 + 1
 </script>
 
