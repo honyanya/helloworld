@@ -12,6 +12,9 @@ const version = 2 + 1
   <div class="hello">
     Hello Nuxt {{ version }}!
   </div>
+  <div>
+    <NuxtLink to="/teleport">About</NuxtLink>
+  </div>
 </template>
 
 <style scoped>
