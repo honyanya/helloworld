@@ -2,7 +2,13 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "nuxt3-hello-world"
+      charset: 'utf-16',
+      viewport: 'width=500, initial-scale=1',
+      title: "nuxt3-hello-world",
+      meta: [
+        // <meta name="description" content="My amazing site">
+        { name: 'description', content: 'My amazing site.' }
+      ]
     }
   },
   modules: [
