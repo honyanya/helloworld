@@ -1,3 +1,4 @@
+use chrono::Utc;
 use clap::Parser;
 
 /// Simple program to greet a person
@@ -19,4 +20,11 @@ fn main() {
     for _ in 0..args.count {
         println!("Hello {}!", args.name)
     }
+
+    show_date()
+}
+
+fn show_date() {
+    let datetime = Utc::now().format("%Y-%m-%d %H:%M:%S %Z").to_string();
+    println!("{}", datetime);
 }
