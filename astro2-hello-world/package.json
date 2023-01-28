@@ -1,0 +1,13 @@
+{
+  "name": "astro2-hello-world",
+  "version": "0.1.0",
+  "dependencies": {
+    "astro": "^2.0.2"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  }
+}
