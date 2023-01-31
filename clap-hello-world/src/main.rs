@@ -1,6 +1,4 @@
-use chrono::FixedOffset;
-use chrono::Local;
-use chrono::Utc;
+use chrono::{FixedOffset, Local, Utc};
 use clap::Parser;
 
 /// Simple program to greet a person
