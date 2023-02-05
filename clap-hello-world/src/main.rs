@@ -31,6 +31,9 @@ fn show_date() {
     let local_datetime = Local::now().format("%Y-%m-%d %H:%M:%S %Z").to_string();
     println!("{}", local_datetime);
 
-    let pdt_datetime = Local::now().with_timezone(&FixedOffset::west(7 * 3600)).format("%Y-%m-%d %H:%M:%S %Z").to_string();
+    let pdt_datetime = Local::now()
+        .with_timezone(&FixedOffset::west(7 * 3600))
+        .format("%Y-%m-%d %H:%M:%S %Z")
+        .to_string();
     println!("{}", pdt_datetime);
 }
